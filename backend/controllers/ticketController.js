@@ -121,8 +121,10 @@ const updateTicket = asyncHandler(async (req, res) => {
         throw new Error('Not authorised')
     }
 
-    const updatedTicket = await await Ticket.
-        findByIdAndUpdate(req.params.is, req.body, { new: true })
+    const updatedTicket = await Ticket.findByIdAndUpdate(
+        req.params.id,
+        req.body, { new: true }
+    );
 
     res.status(200).json(updatedTicket)
 })
