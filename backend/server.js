@@ -15,9 +15,9 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }))
 
-app.get('/', (req, res) => {
-    res.send('hello');
-})
+// app.get('/', (req, res) => {
+//     res.send('hello');
+// })
 
 //Routes
 app.use('/api/users', require('./routes/userRoutes'))
