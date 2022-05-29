@@ -30,11 +30,12 @@ if (process.env.NODE_ENV === 'production') {
     app.get('*', (_, res) => {
         res.sendFile(path.join(__dirname, '../frontend/build/index.html'))
     })
-} else {
-    app.get('/', (req, res) => {
-        res.send('hello');
-    })
 }
+// } else {
+//     app.get('/', (req, res) => {
+//         res.send('hello');
+//     })
+// }
 
 
 app.use(errorHandler);
