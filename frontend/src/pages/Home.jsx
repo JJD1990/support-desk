@@ -20,7 +20,7 @@ function Home() {
                 to="/new-ticket"
                 className="btn btn-reverse btn-block"
             >
-                <FaQuestionCircle /> Creat a New Ticket
+                <FaQuestionCircle /> Create a New Ticket
             </Link>
             {/* <Link to='/new-ticket' className='btn btn-reverse btn-block'>
                  Create a New Ticket
